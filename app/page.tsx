@@ -1,8 +1,11 @@
+import Header from "@/components/Header";
+import Hero from "@/components/Hero";
 import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="min-h-[calc(100vh-95px)]">
+    <div className="">
+      <Hero />
       <h1>Home</h1>
     </div>
   );

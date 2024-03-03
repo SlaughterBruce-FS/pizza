@@ -32,7 +32,7 @@ function Navigation() {
         setMenuOpen(!menuOpen)
     }
     return (
-        <header className=' w-full text-white'>
+        <header className=' w-full text-white absolute z-10'>
             <div className='flex mx-auto justify-between px-4 py-4 container items-center flex-wrap'>
                 <div className='flex gap-3 items-center'>
                     <Image src={logo} alt='Yallas Pizza logo' height={70} />
