@@ -1,5 +1,8 @@
 'use client'
 import React, { useState } from 'react'
+import Link from 'next/link'
+import Image from 'next/image'
+import logo from '../public/images/logo.png'
 
 const links = [
     {
@@ -29,10 +32,11 @@ function Navigation() {
         setMenuOpen(!menuOpen)
     }
     return (
-        <header className='bg-orange-400 w-full text-white'>
+        <header className=' w-full text-white'>
             <div className='flex mx-auto justify-between px-4 py-4 container items-center flex-wrap'>
-                <div>
-                    <a className='font-bold text-2xl' href="#">Yallas Pizza</a>
+                <div className='flex gap-3 items-center'>
+                    <Image src={logo} alt='Yallas Pizza logo' height={70} />
+                    <Link className='font-bold text-2xl' href="#">Yallas Pizza</Link>
                 </div>
 
 
@@ -49,11 +53,14 @@ function Navigation() {
                     <nav id='menu' className={` ${menuOpen ? 'block' : 'hidden'} md:block`}>
                         <ul className='md:flex gap-4'>
                             {links.map((link, index) => (
-                                <li key={index}><a href={link.href}>{link.name}</a></li>
+                                <li key={index}><Link href={link.href}>{link.name}</Link></li>
 
                             ))}
 
-                            <a className='flex md:hidden' href="#">Order Online</a>
+                            <a className='flex md:hidden' href="#">
+
+                                Order Online
+                            </a>
                         </ul>
 
                     </nav>
