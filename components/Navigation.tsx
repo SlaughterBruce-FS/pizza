@@ -57,7 +57,7 @@ function Navigation() {
 
                             ))}
 
-                            <a className='flex md:hidden' href="#">
+                            <a className='flex md:hidden bg-orange-400 px-2' href="#">
 
                                 Order Online
                             </a>
@@ -66,7 +66,7 @@ function Navigation() {
                     </nav>
                 </div>
 
-                <a className='hidden md:flex' href="#">Order Online</a>
+                <Link className='hidden md:flex hover:bg-orange-600 bg-orange-400 px-4 py-4 rounded-full font-bold' href="#">Order Online</Link>
 
             </div>
         </header >
