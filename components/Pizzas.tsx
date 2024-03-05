@@ -66,7 +66,7 @@ const pizzas = [
 ]
 
 function Pizzas() {
-    const [isRotated, setIsRotated] = useState<{ [key: string]: boolean }>({ pep: false, veg: false });
+    const [isRotated, setIsRotated] = useState<{ [key: string]: boolean }>({ pep: false, veg: false, delux: false, tso: false, foud: false, v2: false });
 
 
     const toggleRotation = (pizza: string) => {
