@@ -26,11 +26,9 @@ const specials = [
 function Specials() {
     return (
         <>
-            <div className='absolute'>
-                <Image src={bg} alt='Pizza' height={600} width={2920} />
-            </div>
 
-            <div className='py-20 md:py-48 flex flex-col items-center'>
+
+            <div className='py-20 md:py-20 flex flex-col items-center'>
                 <h4 className='text-2xl text-orange-400'>Fresh From Yallas</h4>
                 <h3 className='text-4xl'>OUR SPECIALS</h3>
 

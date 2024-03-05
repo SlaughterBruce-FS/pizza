@@ -25,6 +25,8 @@ function Choose() {
         <>
 
             <div className='py-20 bg-orange-500 '>
+                <h4 className='text-2xl text-white text-center'>Best Pizza In Town</h4>
+                <h3 className='text-4xl text-center mb-8 uppercase'>Why Choose Us</h3>
                 <div className='grid grid-cols-1 gap-10 md:grid-cols-3 md:gap-20 container mx-auto px-20 ' >
                     {choose.map((item, index) => (
                         <div key={index} className='w-full flex flex-col items-center gap-4'>
@@ -39,6 +41,9 @@ function Choose() {
 
 
             </div >
+            <div className=''>
+                <Image src={bg} alt='Pizza' height={600} width={2920} />
+            </div>
         </>
     )
 }
