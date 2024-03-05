@@ -1,4 +1,5 @@
 import About from "@/components/About";
+import Blog from "@/components/Blog";
 import Choose from "@/components/Choose";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
@@ -16,6 +17,7 @@ export default function Home() {
       <Pizzas />
       <Specials />
       <Reservation />
+      <Blog />
     </div>
   );
 }
