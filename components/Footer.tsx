@@ -33,7 +33,7 @@ const socialLinks = [
 function Footer() {
     return (
         <div>
-            <footer className='bg-orange-400 text-white py-4'>
+            <footer className='bg-orange-600 text-white py-4'>
                 <div className='grid grid-cols-1 md:grid-cols-3 mx-auto gap-4 container md:px-20 '>
                     <div>
                         <div className='flex flex-col gap-0 items-center'>
